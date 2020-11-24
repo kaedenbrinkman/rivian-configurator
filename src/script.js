@@ -2,8 +2,14 @@ const urlParams = new URLSearchParams(window.location.search);
 var baseUrl =
   "https://rivian.com/compimg/" + urlParams.get("model") + "/1.3/us/";
 
+var r1sString = "";
+if (urlParams.get("model") === "r1s") {
+  r1sString = "vv00000285_";
+}
+
 var exteriorString =
   "vv00000282_" +
+  r1sString +
   urlParams.get("color") +
   "_vv00000370_" +
   urlParams.get("wheels");
