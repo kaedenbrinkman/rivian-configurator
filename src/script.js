@@ -7,6 +7,15 @@ if (urlParams.get("model") === "r1s") {
   r1sString = "vv00000285_";
 }
 
+var description = urlParams.get("model").toUpperCase();
+if (urlParams.get("build") === "launch") {
+  description += " Launch Edition";
+} else if (urlParams.get("build") === "adventure") {
+  description += " Adventure Package";
+} else if (urlParams.get("build") === "explore") {
+  description += " Explore Package";
+}
+
 var exteriorString =
   "vv00000282_" +
   r1sString +
@@ -26,15 +35,16 @@ var htmlToAdd =
   '<div class="media text-muted pt-3"><div class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray"><div class="d-flex justify-content-between align-items-center w-100"><strong class="text-gray-dark">Front</strong></div><img width="100%" src="' +
   front +
   '"></div></div>';
-  htmlToAdd +=
+htmlToAdd +=
   '<div class="media text-muted pt-3"><div class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray"><div class="d-flex justify-content-between align-items-center w-100"><strong class="text-gray-dark">Side</strong></div><img width="100%" src="' +
   side +
   '"></div></div>';
-  htmlToAdd +=
+htmlToAdd +=
   '<div class="media text-muted pt-3"><div class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray"><div class="d-flex justify-content-between align-items-center w-100"><strong class="text-gray-dark">Rear</strong></div><img width="100%" src="' +
   rear +
   '"></div></div>';
 
 window.onload = function () {
   $("#cardiv").html(htmlToAdd);
+  $("#subtitle").html(description);
 };
