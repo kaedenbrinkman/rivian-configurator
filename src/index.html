@@ -18,44 +18,56 @@
   <body>
     <form action="post.html" method="GET" class="form-signin">
       <div class="text-center mb-4">
-        <h1 class="h3 mb-3 font-weight-normal">Rivian Poor Man's Configurator</h1>
+        <h1 class="h3 mb-3 font-weight-normal">
+          Rivian Poor Man's Configurator
+        </h1>
       </div>
 
       <div class="form-label-group">
-        <input
-          type="text"
-          id="model"
-          name="id"
-          class="form-control"
-          placeholder="Model"
-          required=""
-          autofocus=""
-        />
-        <label for="model">Model</label>
+        <select name="model" class="form-control" id="model">
+          <option value="R1S">R1S</option>
+          <option value="R1T">R1T</option>
+        </select>
       </div>
 
       <div class="form-label-group">
-        <input
-          type="text"
-          id="color"
-          name="color"
-          class="form-control"
-          placeholder="Exterior Color"
-          required=""
-        />
-        <label for="color">Exterior Color</label>
+        <select name="build" class="form-control" id="build">
+          <option value="launch">Launch Edition</option>
+          <option value="adventure">Adventure Package</option>
+          <option value="explore">Explore Package</option>
+        </select>
       </div>
 
       <div class="form-label-group">
-        <input
-          type="text"
-          id="wheels"
-          name="wheels"
-          class="form-control"
-          placeholder="Wheels"
-          required=""
-        />
-        <label for="wheels">Wheels</label>
+        <select name="color" class="form-control" id="color">
+          <option value="silver">LA Silver</option>
+          <option value="white">Glacier White</option>
+          <option value="red">Red Canyon</option>
+          <option value="black">Midnight</option>
+          <option value="blue">Rivian Blue</option>
+          <option value="grey">Limestone</option>
+          <option value="green">Forest Green</option>
+          <option value="granite">El Cap Granite</option>
+          <option value="yellow">Compass Yellow</option>
+        </select>
+      </div>
+
+      <div class="form-label-group">
+        <select name="wheels" class="form-control" id="wheels">
+          <option value="20-at">20" All-Terrain</option>
+          <option value="20-atd">20" All-Terrain Dark</option>
+          <option value="21-r" selected>21" Road</option>
+          <option value="22-s">22" Sport</option>
+          <option value="202-sd">22" Sport Dark</option>
+        </select>
+      </div>
+
+      <div class="form-label-group">
+        <select name="interior" class="form-control" id="interior">
+          <option value="black">Black Mountain</option>
+          <option value="ocean">Ocean Coast</option>
+          <option value="forest">Forest Edge</option>
+        </select>
       </div>
 
       <button class="btn btn-lg btn-primary btn-block" type="submit">
