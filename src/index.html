@@ -1,1 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rivian Configurator</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <form action="post.html" method="GET" class="form-signin">
+      <div class="text-center mb-4">
+        <h1 class="h3 mb-3 font-weight-normal">Rivian Poor Man's Configurator</h1>
+      </div>
+
+      <div class="form-label-group">
+        <input
+          type="text"
+          id="model"
+          name="id"
+          class="form-control"
+          placeholder="Model"
+          required=""
+          autofocus=""
+        />
+        <label for="model">Model</label>
+      </div>
+
+      <div class="form-label-group">
+        <input
+          type="text"
+          id="color"
+          name="color"
+          class="form-control"
+          placeholder="Exterior Color"
+          required=""
+        />
+        <label for="color">Exterior Color</label>
+      </div>
+
+      <div class="form-label-group">
+        <input
+          type="text"
+          id="wheels"
+          name="wheels"
+          class="form-control"
+          placeholder="Wheels"
+          required=""
+        />
+        <label for="wheels">Wheels</label>
+      </div>
+
+      <button class="btn btn-lg btn-primary btn-block" type="submit">
+        Submit
+      </button>
+    </form>
+  </body>
+</html>
