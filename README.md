@@ -32,3 +32,5 @@ Option codes:
                 vv00000238	Black Mountain
                 vv00000240	Ocean Coast
                 vv00000239	Forest Edge
+                
+Check out the functioning website here: https://kaedenbrinkman.github.io/rivian-configurator/
