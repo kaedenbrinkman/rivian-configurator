@@ -69,3 +69,7 @@ window.onload = function () {
   $("#cardiv").html(htmlToAdd);
   $("#subtitle").html(description);
 };
+
+function back() {
+    window.location = 'https://kaedenbrinkman.github.io/rivian-configurator/';
+}
