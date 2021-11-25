@@ -34,3 +34,32 @@ Option codes:
                 vv00000239	Forest Edge
                 
 Check out the functioning website here: https://kaedenbrinkman.github.io/rivian-configurator/
+
+Update:
+Rivian released v2.1 of the configurator, which has new option codes:
+```
+const option_codes = {
+        "Launch Edition": "PKG-LCH",
+        "Adventure Package": "PKG-ADV",
+        "Explore Package": "PKG-EXP",
+        "LA Silver": "EXP-LSV",
+        "Glacier White": "EXP-GWT",
+        "Red Canyon": "EXP-CRD",
+        Midnight: "EXP-MDN",
+        "Rivian Blue": "EXP-RBL",
+        Limestone: "EXP-LST",
+        "Forest Green": "EXP-FGR",
+        "El Cap Granite": "EXP-ELG",
+        "Compass Yellow": "EXP-CYL",
+        '20" All-Terrain': "WHL-0A1",
+        '20" All-Terrain Dark': "WHL-0AD",
+        '21" Road': "WHL-1RD",
+        '22" Sport Bright': "WHL-2SS",
+        '22" Sport Dark': "WHL-2SD",
+        "Black Mountain": "INT-BMP",
+        "Ocean Coast": "INT-GYP",
+        "Forest Edge": "INT-GRP",
+        R1S: "r1s",
+        R1T: "r1t",
+      };
+```
