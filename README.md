@@ -7,7 +7,7 @@ Base configurator image url:
 
 Example image:
 
-    https://rivian.com/compimg/r1t/1.3/us/vv00000293_vv00000370_vv00000544@3072x2688.front.webp
+    https://rivian.com/compimg/r1s/2.2/us/exp-lgr_ord-ad3_pkg-lch_whl-1rd@3072x2688.front.webp
 
 Views:
 
@@ -52,8 +52,13 @@ The configurator does not change for different battery sizes or motor configurat
 Check out the functioning website here: https://kaedenb.org/rivian-configurator/
 
 
+
+
+
+
+---------
 Note:
-Old option codes (used in configurator v1.x):
+In the configurator v1.x, different option codes were used. They are listed below:
 
                 BUILD	
                 vv00000371	Launch Edition
