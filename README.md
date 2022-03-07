@@ -5,8 +5,55 @@ Base configurator image url:
 
     https://rivian.com/compimg/
 
+Example image:
+
+    https://rivian.com/compimg/r1t/1.3/us/vv00000293_vv00000370_vv00000544@3072x2688.front.webp
+
+Views:
+
+    front
+    rear
+    side
+    driver
+    backseats
+
+
 
 Option codes:
+
+                BUILD	
+                PKG-LCH	Launch Edition
+                PKG-ADV	Adventure Package
+                PKG-EXP	Explore Package
+                PAINT
+                EXP-LSV	LA Silver
+                EXP-GWT	Glacier White
+                EXP-CRD	Red Canyon
+                EXP-MDN	Midnight
+                EXP-RBL	Rivian Blue
+                EXP-LST	Limestone
+                EXP-FGR	Forest Green
+                EXP-LGR	Launch Green
+                EXP-ELG	El Cap Granite
+                EXP-CYL	Compass Yellow
+                WHEELS
+                WHL-0A1	20" All-Terrain
+                WHL-0AD	20" All-Terrain Dark
+                WHL-1RD	21" Road
+                WHL-2SS	22" Sport Bright
+                WHL-2SD	22" Sport Dark
+                INTERIOR
+                INT-BMP	Black Mountain
+                INT-GYP	Ocean Coast
+                INT-GRP	Forest Edge
+
+The configurator does not change for different battery sizes or motor configurations.
+                
+Check out the functioning website here: https://kaedenb.org/rivian-configurator/
+
+
+Note:
+Old option codes (used in configurator v1.x):
 
                 BUILD	
                 vv00000371	Launch Edition
@@ -32,34 +79,3 @@ Option codes:
                 vv00000238	Black Mountain
                 vv00000240	Ocean Coast
                 vv00000239	Forest Edge
-                
-Check out the functioning website here: https://kaedenbrinkman.github.io/rivian-configurator/
-
-Update:
-Rivian released v2.1 of the configurator, which has new option codes:
-```
-const option_codes = {
-        "Launch Edition": "PKG-LCH",
-        "Adventure Package": "PKG-ADV",
-        "Explore Package": "PKG-EXP",
-        "LA Silver": "EXP-LSV",
-        "Glacier White": "EXP-GWT",
-        "Red Canyon": "EXP-CRD",
-        Midnight: "EXP-MDN",
-        "Rivian Blue": "EXP-RBL",
-        Limestone: "EXP-LST",
-        "Forest Green": "EXP-FGR",
-        "El Cap Granite": "EXP-ELG",
-        "Compass Yellow": "EXP-CYL",
-        '20" All-Terrain': "WHL-0A1",
-        '20" All-Terrain Dark': "WHL-0AD",
-        '21" Road': "WHL-1RD",
-        '22" Sport Bright': "WHL-2SS",
-        '22" Sport Dark': "WHL-2SD",
-        "Black Mountain": "INT-BMP",
-        "Ocean Coast": "INT-GYP",
-        "Forest Edge": "INT-GRP",
-        R1S: "r1s",
-        R1T: "r1t",
-      };
-```
